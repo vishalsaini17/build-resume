@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
-import ResumeLayout from "../Layouts/ResumeLayout"
-import Home from "../Pages/Home"
-import Resume from "../Pages/Resume"
+import ResumeLayout from "../layouts/ResumeLayout"
+import Home from "../pages/Home"
+import Resume from "../pages/Resume"
 
 type props = {}
 
