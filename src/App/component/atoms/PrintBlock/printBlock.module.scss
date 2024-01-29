@@ -1,6 +1,19 @@
+$top-space: 2pc;
+$right-space: 2.5pc;
+$bottom-space: 2pc;
+$left-space: 2.5pc;
+
 @page {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  wide {
+    size: a4 portrait;
+  }
+}
+
+.printViewBlock {
+  padding: $top-space $right-space $bottom-space $left-space;
 }
 
 @media print {
@@ -8,10 +21,18 @@
     * {
       visibility: hidden;
     }
+
     body {
       margin: 0;
       /* Reset default browser margin */
     }
+  }
+
+  .printBlock {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: inherit;
   }
 
   .printBlock,
@@ -20,11 +41,5 @@
     color-adjust: exact !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
-  }
-
-  .printBlock {
-    position: absolute;
-    left: 0;
-    top: 0;
   }
 }
