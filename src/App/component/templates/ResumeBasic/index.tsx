@@ -27,8 +27,12 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
         <Grid container>
           {resumeDetails.skilSet.map((skill) => {
             return (
-              <Grid item xs={12} sm={6} key={skill.name}>
-                {skill.name}
+              <Grid item xs={12} sm={6} key={skill.name} >
+                <Grid container>
+                  <Grid item>{skill.name}</Grid>
+                  <Grid item>.......</Grid>
+                  <Grid item>{skill.ratingOutOf10}</Grid>
+                </Grid>
               </Grid>
             );
           })}
