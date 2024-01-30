@@ -1,0 +1,23 @@
+.sectionBasic {
+  padding-bottom: 2rem;
+
+  &::before {
+    content: '';
+    display: block;
+    border-top: 2px solid #222;
+    padding-top: 1px;
+    border-bottom: 2px solid #808080;
+    margin-bottom: 1rem;
+  }
+
+  .sectionTitle {
+    background-color: #e9ecef;
+    text-align: center;
+    padding-block: 2px;
+    margin-bottom: 0.75rem;
+  }
+
+  .sectionContent {
+    padding-inline: 1.5rem;
+  }
+}

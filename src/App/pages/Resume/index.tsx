@@ -1,12 +1,12 @@
 import { resumeInfo } from "../../../mockData/vishalResumeData";
-import ResumeATS from "../../component/templates/ResumeATS";
+import ResumeBasic from "../../component/templates/ResumeBasic";
 
 type props = {};
 
 const Resume: React.FC<props> = () => {
   return (
     <>
-      <ResumeATS data={resumeInfo} />
+      <ResumeBasic resumeDetails={resumeInfo} />
     </>
   );
 };
