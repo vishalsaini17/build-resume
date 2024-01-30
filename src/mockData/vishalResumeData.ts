@@ -1,10 +1,11 @@
 import { resumeData } from "./resumeType";
 
 export const resumeInfo: resumeData = {
-  name: "VISHAL SAINI",
+  name: "Vishal Saini",
   designation: "SR. SOFTWARE ENGINEER | FRONTEND",
   mobileNo: "+91-8467849784",
   email: `vsaini17@hotmail.com`,
+  address: "Gurugram - 122001",
   userBio: {
     title: "Summary",
     description: `
@@ -14,65 +15,65 @@ export const resumeInfo: resumeData = {
   },
   skilSet: [
     {
-      skill: "HTML & CSS",
+      name: "HTML & CSS",
       ratingOutOf10: 8,
     },
     {
-      skill: "Bootstrap, Material UI",
+      name: "Bootstrap, Material UI",
       ratingOutOf10: 8,
     },
     {
-      skill: "JavaScript",
+      name: "JavaScript",
       ratingOutOf10: 8,
     },
     {
-      skill: "JQuery and JQuery plugin",
+      name: "JQuery and JQuery plugin",
       ratingOutOf10: 8,
     },
     {
-      skill: "React",
+      name: "React",
       ratingOutOf10: 8,
     },
     {
-      skill: "TypeScript",
+      name: "TypeScript",
       ratingOutOf10: 8,
     },
     {
-      skill: "Git [Github, Bitbucket]",
+      name: "Git [Github, Bitbucket]",
       ratingOutOf10: 8,
     },
     {
-      skill: "Jira & Trello",
+      name: "Jira & Trello",
       ratingOutOf10: 8,
     },
     {
-      skill: "NPM & .env setup",
+      name: "NPM & .env setup",
       ratingOutOf10: 8,
     },
     {
-      skill: "Grunt, Gulp, Webpack",
+      name: "Grunt, Gulp, Webpack",
       ratingOutOf10: 8,
     },
     {
-      skill: "CI/CD pipeline",
+      name: "CI/CD pipeline",
       ratingOutOf10: 8,
     },
     {
-      skill: "Node",
+      name: "Node",
       ratingOutOf10: 8,
     },
     {
-      skill: "PHP",
+      name: "PHP",
       ratingOutOf10: 8,
     },
     {
-      skill: "MySQL",
+      name: "MySQL",
       ratingOutOf10: 8,
     },
   ],
-  jobExperience: [
+  experience: [
     {
-      companyName: "Kellton",
+      name: "Kellton",
       jobTitle: "Senior Software developer",
       startAt: "Aug​ 2022",
       endAt: "present",
@@ -103,7 +104,7 @@ export const resumeInfo: resumeData = {
       }
     },
     {
-      companyName: "Pristyn Care",
+      name: "Pristyn Care",
       jobTitle: "Senior Software developer",
       startAt: "Dec 2021",
       endAt: "Aug 2022",
@@ -118,7 +119,7 @@ export const resumeInfo: resumeData = {
       }
     },
     {
-      companyName: "Sprinklr",
+      name: "Sprinklr",
       jobTitle: "Frontend Developer",
       startAt: "Feb 2020",
       endAt: "Dec 2021",
@@ -133,7 +134,7 @@ export const resumeInfo: resumeData = {
       }
     },
     {
-      companyName: "Z1-Media (Z1 Tech)",
+      name: "Z1-Media (Z1 Tech)",
       jobTitle: "Frontend Developer",
       startAt: "Jun 2019",
       endAt: "Feb 2020",

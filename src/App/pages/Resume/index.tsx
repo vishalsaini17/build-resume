@@ -1,10 +1,12 @@
+import { resumeInfo } from "../../../mockData/vishalResumeData";
+import ResumeATS from "../../component/templates/ResumeATS";
 
 type props = {};
 
 const Resume: React.FC<props> = () => {
   return (
     <>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis numquam labore amet cupiditate architecto delectus optio aperiam assumenda. Sunt nisi, doloribus modi alias mollitia libero hic dignissimos minus aperiam minima.
+      <ResumeATS data={resumeInfo} />
     </>
   );
 };

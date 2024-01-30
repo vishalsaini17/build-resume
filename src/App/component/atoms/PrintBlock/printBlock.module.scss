@@ -4,8 +4,8 @@ $bottom-space: 2pc;
 $left-space: 2.5pc;
 
 @page {
-  margin-top: 0;
-  margin-bottom: 0;
+  // margin-top: $top-space;
+  // margin-bottom: $bottom-space;
 
   wide {
     size: a4 portrait;
@@ -32,7 +32,6 @@ $left-space: 2.5pc;
     position: absolute;
     left: 0;
     top: 0;
-    padding: inherit;
   }
 
   .printBlock,

@@ -4,7 +4,7 @@ export type UserBio = {
 };
 
 export type Skill = {
-  skill: string;
+  name: string;
   ratingOutOf10: number;
 };
 
@@ -13,8 +13,8 @@ export type Achievement = {
   description: string;
 };
 
-export type JobExperience = {
-  companyName: string;
+export type experienceCompany = {
+  name: string;
   jobTitle: string;
   startAt: string;
   endAt: string;
@@ -45,9 +45,10 @@ export type resumeData = {
   designation: string;
   mobileNo: string;
   email: string;
+  address: string;
   userBio: UserBio;
   skilSet: Skill[];
-  jobExperience: JobExperience[];
+  experience: experienceCompany[];
   educations: Education[];
   awards: string[]; // You can update this type based on the actual structure of awards if needed
 };
