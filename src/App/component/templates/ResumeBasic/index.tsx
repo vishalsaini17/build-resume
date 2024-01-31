@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import { resumeData } from "../../../../mockData/resumeType";
 import SectionResumeBasic from "../../organisms/SectionResumeBasic";
 
@@ -24,13 +24,13 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
         <Typography>{resumeDetails.userBio.description}</Typography>
       </SectionResumeBasic>
       <SectionResumeBasic title="Skills & abilities">
-        <Grid container>
+        <Grid container columnSpacing={3} rowSpacing={1}>
           {resumeDetails.skilSet.map((skill) => {
             return (
               <Grid item xs={12} sm={6} key={skill.name} >
-                <Grid container>
+                <Grid container spacing={2}>
                   <Grid item>{skill.name}</Grid>
-                  <Grid item>.......</Grid>
+                  <Grid item xs><Box sx={{borderBottom: '2px dotted', paddingTop: '1rem'}} /></Grid>
                   <Grid item>{skill.ratingOutOf10}</Grid>
                 </Grid>
               </Grid>
