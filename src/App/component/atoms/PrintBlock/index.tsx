@@ -1,7 +1,6 @@
-import { ReactNode } from "react"
-
-import { Paper } from "@mui/material"
-import styles from './printBlock.module.scss'
+import { Paper } from "@mui/material";
+import { ReactNode } from "react";
+import styles from './printBlock.module.scss';
 
 type props = {
   children: ReactNode

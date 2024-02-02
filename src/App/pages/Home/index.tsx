@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useAppContext } from "../../../AppContext";
+import Editor from "../../component/molecule/Editor";
 
 type props = {};
 
@@ -20,6 +21,11 @@ const Home: React.FC<props> = () => {
       <Button variant="outlined" color="secondary">
         <Link to={"/resume"}>Go to Resume</Link>
       </Button>
+
+      <br />
+      <br />
+
+      <Editor />
     </>
   );
 };

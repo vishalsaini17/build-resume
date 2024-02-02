@@ -1,19 +1,19 @@
-$top-space: 2pc;
-$right-space: 2.5pc;
-$bottom-space: 2pc;
-$left-space: 2.5pc;
-
 @page {
-  // margin-top: $top-space;
-  // margin-bottom: $bottom-space;
+  font-size: 10pt;
+  margin-block: 2.25rem;
 
   wide {
     size: a4 portrait;
   }
+
+  @top-center {
+    content: none;
+    color: red;
+  }
 }
 
 .printViewBlock {
-  padding: $top-space $right-space $bottom-space $left-space;
+  padding: 2.25rem 3rem;
 }
 
 @media print {
