@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { resumeData } from "../../../../mockData/resumeType";
+import Editor from "../../molecule/Editor";
 import SectionResumeBasic from "../../organisms/SectionResumeBasic";
 
 type props = {
@@ -10,9 +11,7 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
   return (
     <>
       <header>
-        <h1>
-          {resumeDetails.name}
-        </h1>
+        <h1>{resumeDetails.name}</h1>
         <Typography variant="subtitle1" component={"h3"}>
           {resumeDetails.designation}
         </Typography>
@@ -21,16 +20,18 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
         </Typography>
       </header>
       <SectionResumeBasic title={resumeDetails.userBio.title}>
-        <Typography>{resumeDetails.userBio.description}</Typography>
+        <Editor value={resumeDetails.userBio.description} contentOnly />
       </SectionResumeBasic>
       <SectionResumeBasic title="Skills & abilities">
         <Grid container columnSpacing={3} rowSpacing={1}>
           {resumeDetails.skilSet.map((skill) => {
             return (
-              <Grid item xs={12} sm={6} key={skill.name} >
+              <Grid item xs={12} sm={6} key={skill.name}>
                 <Grid container spacing={2}>
                   <Grid item>{skill.name}</Grid>
-                  <Grid item xs><Box sx={{borderBottom: '2px dotted', paddingTop: '1rem'}} /></Grid>
+                  <Grid item xs>
+                    <Box sx={{ borderBottom: "2px dotted", paddingTop: "1rem" }} />
+                  </Grid>
                   <Grid item>{skill.ratingOutOf10}</Grid>
                 </Grid>
               </Grid>
@@ -45,13 +46,13 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
               <Typography variant="subtitle2" component={"h2"}>
                 {company.name} | {company.jobTitle} | {company.startAt}-{company.endAt}
               </Typography>
-              <Typography>{company.summary}</Typography>
+              <Editor value={company.summary} contentOnly />
               {company.workInfo && (
                 <div>
                   <Typography variant="subtitle1" component={"h4"}>
                     {company.workInfo.title}
                   </Typography>
-                  <Typography>{company.workInfo.description}</Typography>
+                  <Editor value={company.workInfo.description} contentOnly />
                 </div>
               )}
               {company.achievements && (
@@ -66,7 +67,7 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
                           <Typography component={"strong"}>{achievement.title} :</Typography>
                         </Grid>
                         <Grid item xs>
-                          <Typography>{achievement.description}</Typography>
+                          <Editor value={achievement.description} contentOnly />
                         </Grid>
                       </Grid>
                     );
@@ -90,6 +91,6 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
         })}
       </SectionResumeBasic>
     </>
-  )
-}
-export default ResumeBasic
+  );
+};
+export default ResumeBasic;

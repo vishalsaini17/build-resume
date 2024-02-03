@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAppContext } from "../../../AppContext";
 import Editor from "../../component/molecule/Editor";
@@ -7,7 +8,11 @@ type props = {};
 
 const Home: React.FC<props> = () => {
   const { appState, appDispatch } = useAppContext();
+  const [editorText, setEditorText] = useState("lorem ipsum dummy.")
 
+  useEffect(()=>{
+    console.log("editorText", editorText);
+  }, [editorText])
   return (
     <>
       <h1>{appState.themeMode}</h1>
@@ -25,7 +30,7 @@ const Home: React.FC<props> = () => {
       <br />
       <br />
 
-      <Editor />
+      <Editor value={editorText} onChange={(a)=>{setEditorText(a)}} />
     </>
   );
 };
