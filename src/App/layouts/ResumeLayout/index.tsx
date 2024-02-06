@@ -1,8 +1,8 @@
+import { ArrowBackIos } from '@mui/icons-material';
 import PrintRoundedIcon from '@mui/icons-material/PrintRounded';
-import { Fab } from "@mui/material";
+import { Button, Fab } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import PrintBlock from "../../component/atoms/PrintBlock";
-
 import styles from './resumeLayout.module.scss';
 
 type props = {}
@@ -10,7 +10,9 @@ type props = {}
 const ResumeLayout: React.FC<props> = () => {
   return (
     <div className={styles.layoutWrapper}>
-      <h3>header content</h3>
+      <div className={styles.navbar}>
+        <Button variant="text" title='Back' startIcon={<ArrowBackIos />} >Back</Button>
+      </div>
       <PrintBlock>
         <Outlet />
       </PrintBlock>
