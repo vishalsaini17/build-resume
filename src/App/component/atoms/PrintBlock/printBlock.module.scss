@@ -1,19 +1,23 @@
-@page {
-  font-size: 10pt;
-  margin-block: 2.25rem;
+$spacing-inline: 20pt;
 
+@page {
+  font-size: 0px;
+  margin-block: 2.25rem;
+  margin-inline: $spacing-inline;
   wide {
     size: a4 portrait;
   }
 
   @top-center {
     content: none;
-    color: red;
   }
 }
 
 .printViewBlock {
-  padding: 2.25rem 3rem;
+  padding: 2.25rem $spacing-inline;
+  max-width: 210mm;
+  margin-inline: auto;
+  font-size: 12pt;
 }
 
 @media print {

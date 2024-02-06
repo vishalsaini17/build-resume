@@ -1,8 +1,12 @@
 .sectionBasic {
-  padding-bottom: 1rem;
+  padding-bottom: 15px;
+
+  :global(.ql-container){
+    font-size: inherit;
+  }
 
   p {
-    font-size: 16px;
+    font-size: inherit;
     margin-bottom: 0.5rem;
   }
 
@@ -23,6 +27,6 @@
   }
 
   .sectionContent {
-    padding-inline: 1.5rem;
+    padding-inline: 15pt;
   }
 }
