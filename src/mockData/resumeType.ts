@@ -38,6 +38,7 @@ export type Education = {
   endAt?: string;
   grade: string;
   university?:string;
+  location?:string;
 };
 
 export type resumeData = {

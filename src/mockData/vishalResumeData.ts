@@ -87,7 +87,7 @@ export const resumeInfo: resumeData = {
             description: `
               <p>Evise provide the unique new experience to manage your digital transformation projects towards success. Meet the revolutionary human-led, Generative AI powered business platform to deliver measurable success.</p>
               <p>I create the 'Program Setup' in client portal, which is multistep form and 'Program view' which show setup details and contain lot of action like: handle document, add and remove details.</p>
-              <p>Front-end: React.js, TypeScript, Redux, MUI, SCSS.</p>
+              <p><strong>Front-end: </strong>  React.js, TypeScript, Redux, MUI, SCSS.</p>
               <p>Back-end: OpenAi api, node.js, mongodb.</p>
             `
           },
@@ -96,7 +96,7 @@ export const resumeInfo: resumeData = {
             description: `
               <p>Americana Restaurants is the largest restaurant operator in the MENA region and Kazakhstan in terms of number of restaurants in its countries of operations. Americana Restaurants operates iconic global brands such as KFC, Pizza Hut, Hardee's, Krispy Kreme, TGI Fridays, and recently added Peet's Coffee, along with proprietary brands such as Wimpy and Chicken Tikka across the MENA region and Kazakhstan for over fifty years.</p>
               <p>Integrate Loyalty program in KFC application. Which is provide the point to user on each purchase. User can see, redeem and track the points</p>
-              <p>Front-end: React.js, TypeScript, Redux, MUI, SCSS.</p>
+              <p><strong>Front-end: </strong> React.js, TypeScript, Redux, MUI, SCSS.</p>
               <p>Also make a custom JS library.</p>
             `
           }
@@ -157,6 +157,7 @@ export const resumeInfo: resumeData = {
       startAt: "2017",
       endAt: "2023",
       grade: "60%",
+      location:"Gurugram",
     },
     {
       instituteName: "Happy Modal Sr. Sec. School",
@@ -165,6 +166,7 @@ export const resumeInfo: resumeData = {
       startAt: "Apr, 2012",
       endAt: "Mar, 2013",
       grade: "60%",
+      location:"Gurugram",
     },
     {
       instituteName: "Happy Modal Sr. Sec. School",
@@ -173,6 +175,7 @@ export const resumeInfo: resumeData = {
       startAt: "Apr, 2008",
       endAt: "Apr, 2009",
       grade: "60%",
+      location:"Gurugram",
     }
   ],
   awards: [],

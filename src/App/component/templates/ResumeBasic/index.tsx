@@ -44,13 +44,13 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
         {resumeDetails.experience.map((company) => {
           return (
             <div>
-              <Typography  className={style.heading2} variant="subtitle2" component={"h2"}>
+              <Typography className={style.heading2} variant="subtitle2" component={"h2"}>
                 {company.name} | {company.jobTitle} | {company.startAt}-{company.endAt}
               </Typography>
               <Editor value={company.summary} contentOnly />
               {company.workInfo && (
                 <div>
-                  <Typography sx={{fontWeight:"500"}} variant="subtitle1" component={"h4"}>
+                  <Typography sx={{ fontWeight: "500" }} variant="subtitle1" component={"h4"}>
                     {company.workInfo.title}
                   </Typography>
                   <Editor value={company.workInfo.description} contentOnly />
@@ -61,21 +61,27 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
                   <Typography className={`${style.heading2}`} variant="subtitle1" component={"h4"}>
                     {company.achievements.achievementsTitle}
                   </Typography>
-                  <TableContainer component={Paper}>
-                      <Table sx={{ minWidth: 700 }} aria-label="customized table">
-                        <TableBody>
-                          {company.achievements?.list.map((achievement) => (
-                            <TableRow key={achievement.title}  sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                              <TableCell component="th" scope="achievement" className={style.achieveTitle}>
-                                {achievement.title}
-                              </TableCell>
-                              <TableCell align="right"> <Editor value={achievement.description} contentOnly /></TableCell>
-                            </TableRow>
-                          ))}
-                        </TableBody>
-                      </Table>
-                      </TableContainer>
-
+                  <TableContainer component={Paper} sx={{ padding: "0", boxShadow: "none" }}>
+                    <Table sx={{ minWidth: 700 }} aria-label="customized table">
+                      <TableBody>
+                        {company.achievements?.list.map((achievement) => (
+                          <TableRow key={achievement.title} sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
+                            <TableCell
+                              component="th"
+                              scope="achievement"
+                              sx={{ fontWeight: "500", verticalAlign: "top" }}
+                            >
+                              {achievement.title}
+                            </TableCell>
+                            <TableCell align="right">
+                              {" "}
+                              <Editor value={achievement.description} contentOnly />
+                            </TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
                 </div>
               )}
             </div>
@@ -84,13 +90,25 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
       </SectionResumeBasic>
 
       <SectionResumeBasic title="Educations">
-        {resumeDetails.educations.map((education) => {
+        {resumeDetails.educations.map((education, i) => {
           return (
-            <div>
-              <Typography  className={`${style.achieveTitle}`} variant="h6">
-                {education.instituteName}, {education.courseName}
-              </Typography>
-            </div>
+            <Grid container spacing={2} sx={{ marginBottom: "1rem" }}>
+              <Grid item>
+                <Typography className={`${style.achieveTitle}`} variant="h6">
+                  {education.instituteName}
+                </Typography>
+                <Typography sx={{ fontSize: "14px" }}> {education.courseName}</Typography>
+              </Grid>
+              <Grid item xs>
+                <Box sx={{ borderBottom: "2px dotted", paddingTop: "1rem" }} />
+              </Grid>
+              <Grid item sx={{ textAlign: "right" }}>
+                <Typography>
+                  {education.startAt} - {education.endAt}
+                </Typography>
+                <Typography> {education.location} </Typography>
+              </Grid>
+            </Grid>
           );
         })}
       </SectionResumeBasic>
