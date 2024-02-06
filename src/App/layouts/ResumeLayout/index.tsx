@@ -9,7 +9,7 @@ type props = {}
 
 const ResumeLayout: React.FC<props> = () => {
   return (
-    <>
+    <div className={styles.layoutWrapper}>
       <h3>header content</h3>
       <PrintBlock>
         <Outlet />
@@ -20,7 +20,7 @@ const ResumeLayout: React.FC<props> = () => {
           Print Resume
         </Fab>
       </div>
-    </>
+    </div>
   )
 }
 export default ResumeLayout

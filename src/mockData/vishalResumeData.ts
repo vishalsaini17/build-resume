@@ -16,19 +16,19 @@ export const resumeInfo: resumeData = {
   skilSet: [
     {
       name: "HTML & CSS",
-      ratingOutOf10: 8,
+      ratingOutOf10: 8.5,
     },
     {
       name: "Bootstrap, Material UI",
-      ratingOutOf10: 8,
+      ratingOutOf10: 8.5,
     },
     {
       name: "JavaScript",
-      ratingOutOf10: 8,
+      ratingOutOf10: 7.5,
     },
     {
       name: "JQuery and JQuery plugin",
-      ratingOutOf10: 8,
+      ratingOutOf10: 9,
     },
     {
       name: "React",
@@ -36,7 +36,7 @@ export const resumeInfo: resumeData = {
     },
     {
       name: "TypeScript",
-      ratingOutOf10: 8,
+      ratingOutOf10: 7,
     },
     {
       name: "Git [Github, Bitbucket]",
@@ -48,27 +48,27 @@ export const resumeInfo: resumeData = {
     },
     {
       name: "NPM & .env setup",
-      ratingOutOf10: 8,
+      ratingOutOf10: 7,
     },
     {
       name: "Grunt, Gulp, Webpack",
-      ratingOutOf10: 8,
+      ratingOutOf10: 7,
     },
     {
       name: "CI/CD pipeline",
-      ratingOutOf10: 8,
+      ratingOutOf10: 6,
     },
     {
       name: "Node",
-      ratingOutOf10: 8,
+      ratingOutOf10: 5,
     },
     {
       name: "PHP",
-      ratingOutOf10: 8,
+      ratingOutOf10: 5,
     },
     {
       name: "MySQL",
-      ratingOutOf10: 8,
+      ratingOutOf10: 5,
     },
   ],
   experience: [
