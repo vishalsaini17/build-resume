@@ -88,7 +88,7 @@ export const resumeInfo: resumeData = {
               <p>Evise provide the unique new experience to manage your digital transformation projects towards success. Meet the revolutionary human-led, Generative AI powered business platform to deliver measurable success.</p>
               <p>I create the 'Program Setup' in client portal, which is multistep form and 'Program view' which show setup details and contain lot of action like: handle document, add and remove details.</p>
               <p><strong>Front-end: </strong>  React.js, TypeScript, Redux, MUI, SCSS.</p>
-              <p>Back-end: OpenAi api, node.js, mongodb.</p>
+              <p><strong>Back-end</strong>: OpenAi api, node.js, mongodb.</p>
             `
           },
           {
@@ -114,7 +114,7 @@ export const resumeInfo: resumeData = {
         title: "Role and Responsibilities",
         description: `
           <p>Designed and implemented an admin dashboard that automatically generates marketing pages using data from Excel sheets and CSV files. Additionally, created HTML page templates.</p>
-          <p>Front-end: React.js, TypeScript, Context API, MUI, SCSS.</p>
+          <p><strong>Front-end</strong>: React.js, TypeScript, Context API, MUI, SCSS.</p>
         `
       }
     },
@@ -129,7 +129,7 @@ export const resumeInfo: resumeData = {
         title: "Role and Responsibilities",
         description: `
           <p>During my tenure at Sprinklr, I worked as a Frontend Developer and created Web pages and blocks template using React with TypeScript and ThemeUI. Data was provided by the Contentful CMS, so I connected the data using a Gatsby & GraphQL setup.</p>
-          <p>Front-end: React.js, TypeScript, GraphQL, Context API, ThemeUI, SCSS.</p>
+          <p><strong>Front-end</strong>: React.js, TypeScript, GraphQL, Context API, ThemeUI, SCSS.</p>
         `
       }
     },
@@ -143,8 +143,8 @@ export const resumeInfo: resumeData = {
       workInfo: {
         title: "Role and Responsibilities",
         description: `
-          <p> Z1 Tech is a new age digital media company that strives to innovate digital marketing, advertising and distribution channels.</p>
-          <p>Front-end: React.js, TypeScript, GraphQL, Context API, ThemeUI, SCSS.</p>
+          <p>Z1 Tech is a new age digital media company that strives to innovate digital marketing, advertising and distribution channels.</p>
+          <p><strong>Front-end</strong>: React.js, TypeScript, GraphQL, Context API, ThemeUI, SCSS.</p>
         `
       }
     },

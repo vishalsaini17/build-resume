@@ -1,5 +1,10 @@
 .sectionBasic {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+
+  p {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+  }
 
   &::before {
     content: '';

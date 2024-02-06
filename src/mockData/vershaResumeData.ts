@@ -84,7 +84,7 @@ export const resumeInfo2: resumeData = {
             description: `
               <p> its a module of flight booking system in adani one existing website , with this customer can book flights in group with best offers.</p>
               <p> Translated design team's UX wireframes and mockups into responsive, interactive features, using HTML/CSS, bootstrap and JavaScript.</p>
-              <p>Front-end: Website is developed into Sass, HTML5, and React,CSS, Bootstrap. React.js, MUI, SCSS.</p>
+              <p><strong>Front-end</strong>: Website is developed into Sass, HTML5, and React,CSS, Bootstrap. React.js, MUI, SCSS.</p>
             `
           }
         ]
@@ -101,9 +101,9 @@ export const resumeInfo2: resumeData = {
       workInfo: {
         title: "Role and Responsibilities",
         description: `
-          <p>Front-end: React.js, Web API, HTML, CSS, Java Script, MUI, SCSS.</p>
+          <p><strong>Front-end</strong>: React.js, Web API, HTML, CSS, Java Script, MUI, SCSS.</p>
           <p>Designed and developed front-end , using jQuery, jQueyUI, Html ad javaScript.</p>
-          <p> Translated design team's UX wireframes and mockups into responsive, interactive features, using HTML/CSS, bootstrap and JavaScript</p>
+          <p>Translated design team's UX wireframes and mockups into responsive, interactive features, using HTML/CSS, bootstrap and JavaScript</p>
 
         `
       }

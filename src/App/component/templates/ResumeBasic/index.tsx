@@ -50,10 +50,12 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
               <Editor value={company.summary} contentOnly />
               {company.workInfo && (
                 <div>
-                  <Typography sx={{ fontWeight: "500" }} variant="subtitle1" component={"h4"}>
+                  <Typography sx={{ fontWeight: "500", fontStyle: 'italic' }} variant="subtitle1" component={"h4"}>
                     {company.workInfo.title}
                   </Typography>
-                  <Editor value={company.workInfo.description} contentOnly />
+                  <div style={{paddingInline: '1rem'}}>
+                    <Editor value={company.workInfo.description} contentOnly />
+                  </div>
                 </div>
               )}
               {company.achievements && (
