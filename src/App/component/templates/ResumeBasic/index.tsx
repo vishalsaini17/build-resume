@@ -2,7 +2,7 @@ import { Box, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableRow
 import { resumeData } from "../../../../mockData/resumeType";
 import Editor from "../../molecule/Editor";
 import SectionResumeBasic from "../../organisms/SectionResumeBasic";
-import style from "../ResumeBasic/resumeBasic.module.scss";
+import styles from "../ResumeBasic/resumeBasic.module.scss";
 
 type props = {
   resumeDetails: resumeData;
@@ -10,7 +10,7 @@ type props = {
 
 const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
   return (
-    <>
+    <div className={styles.resumeBasic}>
       <header>
         <h1>{resumeDetails.name}</h1>
         <Typography variant="subtitle1" component={"h3"}>
@@ -44,7 +44,7 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
         {resumeDetails.experience.map((company) => {
           return (
             <div>
-              <Typography className={style.heading2} variant="subtitle2" component={"h2"}>
+              <Typography className={styles.heading2} variant="subtitle2" component={"h2"}>
                 {company.name} | {company.jobTitle} | {company.startAt}-{company.endAt}
               </Typography>
               <Editor value={company.summary} contentOnly />
@@ -60,7 +60,7 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
               )}
               {company.achievements && (
                 <div>
-                  <Typography className={`${style.heading2}`} variant="subtitle1" component={"h4"}>
+                  <Typography className={`${styles.heading2}`} variant="subtitle1" component={"h4"}>
                     {company.achievements.achievementsTitle}
                   </Typography>
                   <TableContainer component={Paper} sx={{ padding: "0", boxShadow: "none" }}>
@@ -96,25 +96,25 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
           return (
             <Grid container spacing={2} sx={{ marginBottom: "1rem" }}>
               <Grid item>
-                <Typography className={`${style.achieveTitle}`} variant="h6">
+                <Typography className={`${styles.achieveTitle}`} variant="h6">
                   {education.instituteName}
                 </Typography>
-                <Typography sx={{ fontSize: "14px" }}> {education.courseName}</Typography>
+                <Box sx={{ fontSize: "14px" }}> {education.courseName}</Box>
               </Grid>
               <Grid item xs>
                 <Box sx={{ borderBottom: "2px dotted", paddingTop: "1rem" }} />
               </Grid>
               <Grid item sx={{ textAlign: "right" }}>
-                <Typography>
+                <Box>
                   {education.startAt} - {education.endAt}
-                </Typography>
-                <Typography> {education.location} </Typography>
+                </Box>
+                <Box sx={{ fontSize: "14px" }}> {education.location} </Box>
               </Grid>
             </Grid>
           );
         })}
       </SectionResumeBasic>
-    </>
+    </div>
   );
 };
 export default ResumeBasic;
