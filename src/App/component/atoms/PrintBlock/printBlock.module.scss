@@ -1,9 +1,9 @@
+$spacing-block: 20pt;
 $spacing-inline: 20pt;
 
 @page {
   font-size: 0px;
-  margin-block: 2.25rem;
-  margin-inline: $spacing-inline;
+  margin: $spacing-block $spacing-inline;
   wide {
     size: a4 portrait;
   }
