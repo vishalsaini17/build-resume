@@ -139,11 +139,11 @@ export const resumeInfo: resumeData = {
       startAt: "Jun 2019",
       endAt: "Feb 2020",
       location: "Gurugram",
-      summary: `<p><p>`,
+      summary: `<p>Z1 Tech is a new age digital media company that strives to innovate digital marketing, advertising and distribution channels. <p>`,
       workInfo: {
         title: "Role and Responsibilities",
         description: `
-          <p>.</p>
+          <p> Z1 Tech is a new age digital media company that strives to innovate digital marketing, advertising and distribution channels.</p>
           <p>Front-end: React.js, TypeScript, GraphQL, Context API, ThemeUI, SCSS.</p>
         `
       }
@@ -157,7 +157,6 @@ export const resumeInfo: resumeData = {
       startAt: "2017",
       endAt: "2023",
       grade: "60%",
-      description: "",
     },
     {
       instituteName: "Happy Modal Sr. Sec. School",
@@ -166,7 +165,6 @@ export const resumeInfo: resumeData = {
       startAt: "Apr, 2012",
       endAt: "Mar, 2013",
       grade: "60%",
-      description: "",
     },
     {
       instituteName: "Happy Modal Sr. Sec. School",
@@ -175,7 +173,6 @@ export const resumeInfo: resumeData = {
       startAt: "Apr, 2008",
       endAt: "Apr, 2009",
       grade: "60%",
-      description: "",
     }
   ],
   awards: [],

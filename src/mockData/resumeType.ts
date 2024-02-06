@@ -35,9 +35,9 @@ export type Education = {
   courseName: string;
   fieldOfStudy: string;
   startAt: string;
-  endAt: string;
+  endAt?: string;
   grade: string;
-  description: string;
+  university?:string;
 };
 
 export type resumeData = {
