@@ -1,17 +1,22 @@
-import { ArrowBackIos } from '@mui/icons-material';
-import PrintRoundedIcon from '@mui/icons-material/PrintRounded';
+import { ArrowBackIos } from "@mui/icons-material";
+import PrintRoundedIcon from "@mui/icons-material/PrintRounded";
 import { Button, Fab } from "@mui/material";
 import { Outlet } from "react-router-dom";
+import Link from "../../component/atoms/Link";
 import PrintBlock from "../../component/atoms/PrintBlock";
-import styles from './resumeLayout.module.scss';
+import styles from "./resumeLayout.module.scss";
 
-type props = {}
+type props = {};
 
 const ResumeLayout: React.FC<props> = () => {
   return (
     <div className={styles.layoutWrapper}>
       <div className={styles.navbar}>
-        <Button variant="text" title='Back' startIcon={<ArrowBackIos />} >Back</Button>
+        <Link href="/">
+          <Button variant="text" title="Back" startIcon={<ArrowBackIos />}>
+            Back
+          </Button>
+        </Link>
       </div>
       <PrintBlock>
         <Outlet />
@@ -23,6 +28,6 @@ const ResumeLayout: React.FC<props> = () => {
         </Fab>
       </div>
     </div>
-  )
-}
-export default ResumeLayout
+  );
+};
+export default ResumeLayout;

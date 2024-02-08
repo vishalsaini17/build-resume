@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { useAppContext } from "../../../AppContext";
+import Link from "../../component/atoms/Link";
 import Editor from "../../component/molecule/Editor";
 
 type props = {};
@@ -23,10 +23,7 @@ const Home: React.FC<props> = () => {
         change theme
       </Button>
 
-      <Button variant="outlined" color="secondary">
-        <Link to={"/resume"}>Go to Resume</Link>
-      </Button>
-
+      <Link href="/resume" variant="button" underline="hover">Check Resume </Link>
       <br />
       <br />
 
