@@ -12,13 +12,14 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
   return (
     <div className={styles.resumeBasic}>
       <header>
-        <h1>{resumeDetails.name}</h1>
+        <h1 style={{margin:"0.5em 0 0.25em"}}>{resumeDetails.name}</h1>
         <Typography variant="subtitle1" component={"h3"}>
           {resumeDetails.designation}
         </Typography>
         <Typography variant="subtitle2" component={"h3"}>
-          {resumeDetails.address} | {resumeDetails.mobileNo} | {resumeDetails.email}
+          {resumeDetails.address} | <a style={{textDecoration:"none" , color:"rgb(13, 110, 253)"}} href={`tel:${resumeDetails.mobileNo}`}> {resumeDetails.mobileNo} </a> | <a  style={{textDecoration:"none" ,  color:"rgb(13, 110, 253)"}} href={`mailto:${resumeDetails.email}`}> {resumeDetails.email} </a> 
         </Typography>
+      
       </header>
       <SectionResumeBasic title={resumeDetails.userBio.title}>
         <Editor value={resumeDetails.userBio.description} contentOnly />
@@ -44,8 +45,8 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
         {resumeDetails.experience.map((company) => {
           return (
             <div>
-              <Typography className={styles.heading2} variant="subtitle2" component={"h2"}>
-                {company.name} | {company.jobTitle} | {company.startAt}-{company.endAt}
+              <Typography variant="subtitle2" component={"h2"} sx={{fontSize:"16px" , fontWeight:"700" , padding:"10px 0"}}>
+                {company.name} | {company.jobTitle} | <span style={{fontWeight:"400" , fontSize:"0.9em" , fontStyle:"italic"}}> {company.startAt}-{company.endAt}  </span> 
               </Typography>
               <Editor value={company.summary} contentOnly />
               {company.workInfo && (
@@ -60,23 +61,22 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
               )}
               {company.achievements && (
                 <div>
-                  <Typography className={`${styles.heading2}`} variant="subtitle1" component={"h4"}>
+                  <Typography sx={{fontSize:"16px" , fontWeight:"700"}}  variant="subtitle1" component={"h4"}>
                     {company.achievements.achievementsTitle}
                   </Typography>
                   <TableContainer component={Paper} sx={{ padding: "0", boxShadow: "none" }}>
                     <Table sx={{ minWidth: 700 }} aria-label="customized table">
                       <TableBody>
                         {company.achievements?.list.map((achievement) => (
-                          <TableRow key={achievement.title} sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
+                          <TableRow key={achievement.title} sx={{ "&:last-child td, &:last-child th": {border:0 } }}>
                             <TableCell
                               component="th"
                               scope="achievement"
-                              sx={{ fontWeight: "500", verticalAlign: "top" }}
+                              sx={{ fontWeight: "500", verticalAlign: "top" , paddingBottom:"0" , borderBottom:"0"}}
                             >
                               {achievement.title}
                             </TableCell>
                             <TableCell align="right">
-                              {" "}
                               <Editor value={achievement.description} contentOnly />
                             </TableCell>
                           </TableRow>
@@ -96,7 +96,7 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
           return (
             <Grid container spacing={2} sx={{ marginBottom: "1rem" }}>
               <Grid item>
-                <Typography className={`${styles.achieveTitle}`} variant="h6">
+                <Typography variant="h6" sx={{fontSize:"16px" , fontWeight:"500"}}>
                   {education.instituteName}
                 </Typography>
                 <Box sx={{ fontSize: "14px" }}> {education.courseName}</Box>
