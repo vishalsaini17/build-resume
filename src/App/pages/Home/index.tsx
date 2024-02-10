@@ -26,6 +26,7 @@ const Home: React.FC<props> = () => {
       <Link href="/resume" variant="button" underline="hover">Check Resume </Link>
       <br />
       <br />
+      <br />
 
       <Editor value={editorText} onChange={(a)=>{setEditorText(a)}} />
     </>
