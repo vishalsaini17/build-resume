@@ -1,5 +1,8 @@
 import { Grid, Typography } from "@mui/material";
 import { resumeData } from "../../../../mockData/resumeType";
+import Editor from "../../molecule/Editor";
+import SectionResumeATS from "../../organisms/SectionResumeATS ";
+import style from "./resumeAts.module.scss";
 
 type props = {
   resumeDetails: resumeData;
@@ -7,7 +10,7 @@ type props = {
 
 const ResumeATS: React.FC<props> = ({ resumeDetails }) => {
   return (
-    <div>
+    <div className={style.mainWrapper}>
       <header>
         <Typography variant={"h3"} component={"h1"}>
           {resumeDetails.name}
@@ -19,16 +22,15 @@ const ResumeATS: React.FC<props> = ({ resumeDetails }) => {
           {resumeDetails.address} | {resumeDetails.mobileNo} | {resumeDetails.email}
         </Typography>
       </header>
-      <section>
-        <Typography variant="h6" component={"h2"}>
-          {resumeDetails.userBio.title}
-        </Typography>
-        <Typography>{resumeDetails.userBio.description}</Typography>
-      </section>
-      <section>
-        <Typography variant="h6" component={"h2"}>
+
+      <SectionResumeATS title= {resumeDetails.userBio.title}>
+      <Editor value={resumeDetails.userBio.description} contentOnly />
+      </SectionResumeATS>
+    
+      <SectionResumeATS title="Skills & abilities">
+        {/* <Typography variant="h6" component={"h2"}>
           Skills & abilities
-        </Typography>
+        </Typography> */}
         <Grid container>
           {resumeDetails.skilSet.map((skill) => {
             return (
@@ -38,31 +40,34 @@ const ResumeATS: React.FC<props> = ({ resumeDetails }) => {
             );
           })}
         </Grid>
-      </section>
-      <section>
-        <Typography variant="h6" component={"h2"}>
+      </SectionResumeATS>
+      <SectionResumeATS title=" Experience">
+        {/* <Typography variant="h6" component={"h2"}>
           Experience
-        </Typography>
+        </Typography> */}
         {resumeDetails.experience.map((company) => {
           return (
             <div>
               <Typography variant="subtitle2" component={"h2"}>
                 {company.name} | {company.jobTitle} | {company.startAt}-{company.endAt}
               </Typography>
-              <Typography>{company.summary}</Typography>
+              {/* <Typography>
+                {company.summary}</Typography> */}
+                <Editor value={company.summary} contentOnly />
               {company.workInfo && (
                 <div>
                   <Typography variant="subtitle1" component={"h4"}>
                     {company.workInfo.title}
                   </Typography>
-                  <Typography>{company.workInfo.description}</Typography>
+                  {/* <Typography>{company.workInfo.description}</Typography> */}
+                  <Editor value={company.workInfo.description} contentOnly />
                 </div>
               )}
               {company.achievements && (
                 <div>
-                  <Typography variant="subtitle1" component={"h4"}>
+                  {/* <Typography variant="subtitle1" component={"h4"}>
                     {company.achievements.achievementsTitle}
-                  </Typography>
+                  </Typography> */}
                   {company.achievements.list.map((achievement) => {
                     return (
                       <Grid container>
@@ -70,7 +75,8 @@ const ResumeATS: React.FC<props> = ({ resumeDetails }) => {
                           <Typography component={"strong"}>{achievement.title} :</Typography>
                         </Grid>
                         <Grid item xs>
-                          <Typography>{achievement.description}</Typography>
+                          {/* <Typography>{achievement.description}</Typography> */}
+                          <Editor value={achievement.description} contentOnly />
                         </Grid>
                       </Grid>
                     );
@@ -80,12 +86,12 @@ const ResumeATS: React.FC<props> = ({ resumeDetails }) => {
             </div>
           );
         })}
-      </section>
+      </SectionResumeATS>
 
-      <section>
-        <Typography variant="h6" component={"h2"}>
+      <SectionResumeATS title="Educations">
+        {/* <Typography variant="h6" component={"h2"}>
           Educations
-        </Typography>
+        </Typography> */}
         {resumeDetails.educations.map((education) => {
           return (
             <div>
@@ -95,7 +101,7 @@ const ResumeATS: React.FC<props> = ({ resumeDetails }) => {
             </div>
           );
         })}
-      </section>
+      </SectionResumeATS>
     </div>
   );
 };

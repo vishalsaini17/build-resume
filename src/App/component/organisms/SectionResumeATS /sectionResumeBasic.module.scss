@@ -1,0 +1,31 @@
+.sectionBasic {
+  padding-bottom: 15px;
+
+  :global(.ql-container){
+    font-size: inherit;
+  }
+
+  p {
+    font-size: inherit;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    border-top: 2px solid #222;
+    padding-top: 1px;
+    border-bottom: 2px solid #808080;
+    margin-bottom: 1rem;
+  }
+
+  .sectionTitle {
+    background-color: rgb(233, 236, 239);
+    text-align: center;
+    padding-block: 2px;
+    margin-bottom: 0.75rem;
+  }
+
+  .sectionContent {
+    padding-inline: 15pt;
+  }
+}
