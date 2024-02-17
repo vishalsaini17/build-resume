@@ -4,9 +4,9 @@ import { darkTheme, lightTheme } from "../Theme";
 import { actionProps, appContextProps, appContextProviderProps, appStateProps } from "./type";
 
 const defaultData: appStateProps = {
-  themeMode: 'light'
-}
-
+  themeMode: "light",
+  resumeTemplate: "simple",
+};
 
 const AppContext = createContext<appContextProps | undefined>(undefined);
 
@@ -21,8 +21,10 @@ export const useAppContext = (): appContextProps => {
 
 function appReducer(state: appStateProps, action: actionProps): appStateProps {
   switch (action.type) {
-    case 'themeMode':
+    case "themeMode":
       return { ...state, themeMode: action.payload };
+    case "changeTemplate":
+      return { ...state, resumeTemplate: action.payload };
     default:
       throw new Error();
   }
@@ -31,18 +33,18 @@ function appReducer(state: appStateProps, action: actionProps): appStateProps {
 const AppContextProvider: React.FC<appContextProviderProps> = ({ children }) => {
   const [state, dispatch] = useReducer(appReducer, defaultData);
   const theme = useMemo(() => {
-    return state.themeMode === 'dark' ? darkTheme : lightTheme;
-  }, [state])
+    return state.themeMode === "dark" ? darkTheme : lightTheme;
+  }, [state]);
 
   return (
-    <AppContext.Provider value={{
-      appState: state,
-      appDispatch: dispatch
-    }} >
-      <ThemeProvider theme={theme}>
-        {children}
-      </ThemeProvider>
+    <AppContext.Provider
+      value={{
+        appState: state,
+        appDispatch: dispatch,
+      }}
+    >
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </AppContext.Provider>
-  )
-}
-export default AppContextProvider
+  );
+};
+export default AppContextProvider;

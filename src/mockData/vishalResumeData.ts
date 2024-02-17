@@ -15,7 +15,7 @@ export const resumeInfo: resumeData = {
   },
   skilSet: [
     {
-      name: "HTML & CSS",
+      name: "HTML & CSS3",
       ratingOutOf10: 8.5,
     },
     {

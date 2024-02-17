@@ -72,7 +72,6 @@ export const resumeInfo2: resumeData = {
  
               <p>This project has the procedure that divorce makes easy some simple steps , they have best lawyers for their customer to get best
               results.</p>
-              <p>I create the 'Program Setup' in client portal, which is multistep form and 'Program view' which show setup details and contain lot of action like: handle document, add and remove details.</p>
               <p> Identified web-based user interactions and developed highly-responsive user interface components via React concepts <p> 
               <p> Translated designs & wire frames into quality code and wrote application interface code via JavaScript following React js workflows  </p>
               <p>Involved in requirements gathering, analysis, design, implementation, and testing.</p>
