@@ -7,16 +7,15 @@ import Resume from "../pages/Resume"
 type props = {}
 
 const Router: React.FC<props> = () => {
- 
+
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:username"  element={<ResumeLayout />} >
-        <Route index element={<Resume />} />
+        <Route path="/:username" element={<ResumeLayout />} >
+          <Route index element={<Resume />} />
         </Route>
         <Route path="*" element={<NotFound />} />
-
       </Routes>
     </>
   )
