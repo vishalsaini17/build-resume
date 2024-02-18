@@ -1,7 +1,7 @@
 import { ArrowBackIos } from "@mui/icons-material";
 import PrintRoundedIcon from "@mui/icons-material/PrintRounded";
 import { Button, Fab } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
 import { useAppContext } from "../../../AppContext";
 import Link from "../../component/atoms/Link";
@@ -13,38 +13,35 @@ type props = {
 };
 export type resumeTemplateProps = "simple" | "ats";
 
-const ResumeLayout: React.FC<props> = () => { 
-  // const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const [useNewFormat , setUseNewFormat] = useState(false);
-  const {appDispatch , appState} = useAppContext();
-  console.log(appState , "appstate button");
-  
+const ResumeLayout: React.FC<props> = () => {
+  const { appDispatch, appState } = useAppContext();
+  console.log(appState, "appstate button");
+
   const handleClick = () => {
-    setUseNewFormat(prev => !prev)
     console.log("logged");
-    appDispatch({type:"changeTemplate" , payload:"ats"});
-    
+    appDispatch({ type: "changeTemplate", payload: "ats" });
+
 
   };
- 
+
   return (
     <div className={styles.layoutWrapper}>
       <div className={styles.navbar}>
         <div>
-        <Link href="/">
-          <Button variant="text" title="Back" startIcon={<ArrowBackIos />}>
-            Back
-          </Button>
-        </Link>
+          <Link href="/">
+            <Button variant="text" title="Back" startIcon={<ArrowBackIos />}>
+              Back
+            </Button>
+          </Link>
         </div>
-      <div>
-      <Button
-        id="fade-button"
-        onClick={handleClick}
-      >
-        Change Template
-       </Button>
-      {/* <Menu
+        <div>
+          <Button
+            id="fade-button"
+            onClick={handleClick}
+          >
+            Change Template
+          </Button>
+          {/* <Menu
         id="fade-menu"
         MenuListProps={{
           'aria-labelledby': 'fade-button',
@@ -57,7 +54,7 @@ const ResumeLayout: React.FC<props> = () => {
         <MenuItem onClick={handleClose}>Template 1</MenuItem>
         <MenuItem onClick={handleClose}>Template 2</MenuItem>
       </Menu> */}
-      </div>
+        </div>
       </div>
       <PrintBlock>
         <Outlet />
