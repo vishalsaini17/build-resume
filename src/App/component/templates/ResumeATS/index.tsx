@@ -1,7 +1,7 @@
 import { Grid, Paper, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from "@mui/material";
 import { resumeData } from "../../../../mockData/resumeType";
 import Editor from "../../molecule/Editor";
-import SectionResumeATS from "../../organisms/SectionResumeATS ";
+import SectionResumeATS from "../../organisms/SectionResumeATS";
 import style from "./resumeAts.module.scss";
 
 type props = {
