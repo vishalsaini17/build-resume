@@ -46,7 +46,10 @@ export type resumeData = {
   designation: string;
   mobileNo: string;
   email: string;
-  website:string;
+  website: {
+    url:string,
+    name:string,
+  },
   address: string;
   userBio: UserBio;
   skilSet: Skill[];
