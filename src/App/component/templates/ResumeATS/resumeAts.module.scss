@@ -1,3 +1,27 @@
 .mainWrapper{
-  
+  p , h1, h2 , h3, h4, h5 ,h6{
+    font-family:'Arial Narrow Bold', sans-serif;
+  }
+  p{
+   font-size:16px;
+  }
+
+  .name{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .titleSummary{
+    font-weight: bold;
+  }
+  .companyInfo{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  .summaryInfo{
+    padding: 10px 0;
+  }
+  .workInfo{
+    padding-top: 10px;
+  }
 }

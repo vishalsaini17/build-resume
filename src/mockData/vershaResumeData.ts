@@ -5,6 +5,11 @@ export const resumeInfo2: resumeData = {
   designation: "SOFTWARE ENGINEER | FRONTEND",
   mobileNo: "+91-7838307318",
   email: `vershathakur27@gmail.com`,
+  website: {
+    url: `vishweb.com/versha`,
+    name:`/versha`,
+
+  },
   address: "Gurugram - 122001",
   userBio: {
     title: "Summary",
@@ -69,7 +74,6 @@ export const resumeInfo2: resumeData = {
           {
             title: "Divorce Angel",
             description: `
- 
               <p>This project has the procedure that divorce makes easy some simple steps , they have best lawyers for their customer to get best
               results.</p>
               <p> Identified web-based user interactions and developed highly-responsive user interface components via React concepts <p> 
@@ -113,7 +117,8 @@ export const resumeInfo2: resumeData = {
       startAt: "Feb 2021",
       endAt: "Jan 2022",
       location: "Delhi",
-      summary: `<p> .<p>`,
+      summary: `<p> The Global Excellence Group (GEG) with its headquarter in New Delhi incorporates diversified group companies pursuing business objectives independently.
+      <p>`,
       achievements: {
         achievementsTitle: "Projects",
         list: [

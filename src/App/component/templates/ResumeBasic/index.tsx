@@ -18,6 +18,8 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
         </Typography>
         <Typography variant="subtitle2" component={"h3"}>
           {resumeDetails.address} | <a style={{textDecoration:"none" , color:"rgb(13, 110, 253)"}} href={`tel:${resumeDetails.mobileNo}`}> {resumeDetails.mobileNo} </a> | <a  style={{textDecoration:"none" ,  color:"rgb(13, 110, 253)"}} href={`mailto:${resumeDetails.email}`}> {resumeDetails.email} </a> 
+           | <a target="_blank" style={{textDecoration:"none" , color:"rgb(13, 110, 253)"}} href={resumeDetails.website.name} rel="noreferrer"> {resumeDetails.website.url} </a>
+        
         </Typography>
       
       </header>

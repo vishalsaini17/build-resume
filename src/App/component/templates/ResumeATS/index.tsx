@@ -1,33 +1,35 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Paper, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from "@mui/material";
 import { resumeData } from "../../../../mockData/resumeType";
 import Editor from "../../molecule/Editor";
-import SectionResumeATS from "../../organisms/SectionResumeATS ";
+import SectionResumeATS from "../../organisms/SectionResumeATS";
 import style from "./resumeAts.module.scss";
 
 type props = {
   resumeDetails: resumeData;
-};
+}
 
-const ResumeATS: React.FC<props> = ({ resumeDetails }) => {
+const ResumeATS: React.FC<props> = ({ resumeDetails  }) => {
   return (
     <div className={style.mainWrapper}>
       <header>
-        <Typography variant={"h3"} component={"h1"}>
+        <Typography className={style.name} variant={"h3"} component={"h1"}>
           {resumeDetails.name}
         </Typography>
         <Typography variant="subtitle1" component={"h3"}>
           {resumeDetails.designation}
         </Typography>
         <Typography variant="subtitle2" component={"h3"}>
-          {resumeDetails.address} | {resumeDetails.mobileNo} | {resumeDetails.email}
+          {resumeDetails.address} |
+           <a style={{textDecoration:"none" , color:"rgb(13, 110, 253)"}} href={`tel:${resumeDetails.mobileNo}`}> {resumeDetails.mobileNo} </a> | <a  style={{textDecoration:"none" ,  color:"rgb(13, 110, 253)"}} href={`mailto:${resumeDetails.email}`}> {resumeDetails.email} </a> 
+           | <a target="_blank" style={{textDecoration:"none" , color:"rgb(13, 110, 253)"}} href={resumeDetails.website.name} rel="noreferrer"> {resumeDetails.website.url} </a>
         </Typography>
       </header>
 
-      <SectionResumeATS title= {resumeDetails.userBio.title}>
+      <SectionResumeATS  title= {resumeDetails.userBio.title}>
       <Editor value={resumeDetails.userBio.description} contentOnly />
       </SectionResumeATS>
     
-      <SectionResumeATS title="Skills & abilities">
+      <SectionResumeATS   title="Skills & abilities">
         {/* <Typography variant="h6" component={"h2"}>
           Skills & abilities
         </Typography> */}
@@ -48,17 +50,19 @@ const ResumeATS: React.FC<props> = ({ resumeDetails }) => {
         {resumeDetails.experience.map((company) => {
           return (
             <div>
-              <Typography variant="subtitle2" component={"h2"}>
-                {company.name} | {company.jobTitle} | {company.startAt}-{company.endAt}
+              <Typography className={style.companyInfo} variant="subtitle2" component={"h2"}>
+                {company.name} | {company.jobTitle} | <em> {company.startAt}-{company.endAt}</em> 
               </Typography>
               {/* <Typography>
                 {company.summary}</Typography> */}
-                <Editor value={company.summary} contentOnly />
+                <div className={style.summaryInfo}>
+                <Editor  value={company.summary} contentOnly />
+                </div>
               {company.workInfo && (
                 <div>
-                  <Typography variant="subtitle1" component={"h4"}>
+                  <em className={`${style.companyInfo} ${style.workInfo}`}>
                     {company.workInfo.title}
-                  </Typography>
+                  </em>
                   {/* <Typography>{company.workInfo.description}</Typography> */}
                   <Editor value={company.workInfo.description} contentOnly />
                 </div>
@@ -68,19 +72,29 @@ const ResumeATS: React.FC<props> = ({ resumeDetails }) => {
                   {/* <Typography variant="subtitle1" component={"h4"}>
                     {company.achievements.achievementsTitle}
                   </Typography> */}
-                  {company.achievements.list.map((achievement) => {
-                    return (
-                      <Grid container>
-                        <Grid item xs="auto">
-                          <Typography component={"strong"}>{achievement.title} :</Typography>
-                        </Grid>
-                        <Grid item xs>
-                          {/* <Typography>{achievement.description}</Typography> */}
-                          <Editor value={achievement.description} contentOnly />
-                        </Grid>
-                      </Grid>
-                    );
-                  })}
+                      <div>
+                       <TableContainer component={Paper} sx={{ padding: "0", boxShadow: "none" }}>
+                        <Table sx={{ minWidth: 700 }} aria-label="customized table">
+                          <TableBody>
+                            {company.achievements?.list.map((achievement) => (
+                              <TableRow key={achievement.title} sx={{ "&:last-child td, &:last-child th": {border:0 } }}>
+                                <TableCell
+                                  component="th"
+                                  scope="achievement"
+                                  sx={{ fontWeight: "500", verticalAlign: "top" , paddingBottom:"0" , borderBottom:"0"}}
+                                >
+                                  {achievement.title}
+                                </TableCell>
+                                <TableCell align="right">
+                                  <Editor value={achievement.description} contentOnly />
+                                </TableCell>
+                              </TableRow>
+                            ))}
+                          </TableBody>
+                        </Table>
+                      </TableContainer> 
+                    </div>
+                  
                 </div>
               )}
             </div>
@@ -95,7 +109,7 @@ const ResumeATS: React.FC<props> = ({ resumeDetails }) => {
         {resumeDetails.educations.map((education) => {
           return (
             <div>
-              <Typography variant="h6">
+              <Typography className={style.companyInfo} variant="h6">
                 {education.instituteName}, {education.courseName}
               </Typography>
             </div>
