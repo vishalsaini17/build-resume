@@ -5,6 +5,7 @@ export const resumeInfo: resumeData = {
   designation: "SR. SOFTWARE ENGINEER | FRONTEND",
   mobileNo: "+91-8467849784",
   email: `vsaini17@hotmail.com`,
+  website:`vishal.web/vishal`,
   address: "Gurugram - 122001",
   userBio: {
     title: "Summary",
@@ -143,7 +144,10 @@ export const resumeInfo: resumeData = {
       workInfo: {
         title: "Role and Responsibilities",
         description: `
-          <p>Z1 Tech is a new age digital media company that strives to innovate digital marketing, advertising and distribution channels.</p>
+          <p>During my tenure at Z1-Media, most of the time I worked in Admin portal which used to be a
+          multipurpose portal, Like the same Superadmin control, Admin used to manage client and Client
+          also check their status, earning and config according to need. Also worked on their custom
+          Advertisement Library build on core Javascript. </p>
           <p><strong>Front-end</strong>: React.js, TypeScript, GraphQL, Context API, ThemeUI, SCSS.</p>
         `
       }
