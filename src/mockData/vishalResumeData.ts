@@ -5,7 +5,10 @@ export const resumeInfo: resumeData = {
   designation: "SR. SOFTWARE ENGINEER | FRONTEND",
   mobileNo: "+91-8467849784",
   email: `vsaini17@hotmail.com`,
-  website:`vishweb.com/vishal`,
+  website: {
+    url:`vishweb.com/vishal`,
+    name:`/vishal`,
+  },
   address: "Gurugram - 122001",
   userBio: {
     title: "Summary",
