@@ -13,7 +13,7 @@ export const resumeInfo: resumeData = {
   userBio: {
     title: "Summary",
     description: `
-      <p>As an experienced Front-end Developer with 4.5+ years of expertise, I specialize in React and am proficient in HTML, CSS, SCSS, Bootstrap, Material UI, and TypeScript. I am skilled in jQuery, Git, and project management tools like Jira. My goal is to craft visually appealing, responsive, and high-performance web applications that drive innovation in Front-end development.</p>
+      <p>As an experienced Front-end Developer with 6+ years of expertise, I specialize in React and am proficient in HTML, CSS, SCSS, Bootstrap, Material UI, and TypeScript. I am skilled in jQuery, Git, and project management tools like Jira. My goal is to craft visually appealing, responsive, and high-performance web applications that drive innovation in Front-end development.</p>
       <p>I am seeking a challenging role that will allow me to leverage my skills in full-stack development, cloud computing, and agile methodologies to build innovative solutions that solve real-world problems.</p>
     `
   },
@@ -152,6 +152,21 @@ export const resumeInfo: resumeData = {
           also check their status, earning and config according to need. Also worked on their custom
           Advertisement Library build on core Javascript. </p>
           <p><strong>Front-end</strong>: React.js, TypeScript, GraphQL, Context API, ThemeUI, SCSS.</p>
+        `
+      }
+    },
+    {
+      name: "Bhadani technologies",
+      jobTitle: "Web Developer",
+      startAt: "Oct 2017",
+      endAt: "Jun 2019",
+      location: "Gurugram",
+      summary: `<p>Bhadani Technologies is one of the most trusted IT solution provider companies to develop Software, Web, Mobile Apps development, and Testing services.  <p>`,
+      workInfo: {
+        title: "Role and Responsibilities",
+        description: `
+          <p>During my tenure at Bhadani technologies, most of the time I worked in  email templates, Psd to Html , also custom designs according to the client's need and requirements. </p>
+          <p><strong>Front-end</strong>: , Html, Css , Js.</p>
         `
       }
     },
