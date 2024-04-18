@@ -1,4 +1,4 @@
-import Link from "../../component/atoms/Link";
+import { Link } from "@mui/material";
 import style from "./NotFound.module.scss";
 
 const NotFound = () => {

@@ -1,4 +1,4 @@
-import Portfolio from "../../component/templates/Portfolio";
+import Portfolio from "../../templates/Portfolio";
 
 type props = {};
 

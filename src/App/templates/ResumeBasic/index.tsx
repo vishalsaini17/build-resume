@@ -1,7 +1,7 @@
 import { Box, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from "@mui/material";
-import { resumeData } from "../../../../mockData/resumeType";
-import Editor from "../../molecule/Editor";
-import SectionResumeBasic from "../../organisms/SectionResumeBasic";
+import { resumeData } from "../../../mockData/resumeType";
+import Editor from "../../component/Editor";
+import SectionResumeBasic from "../../sections/SectionResumeBasic";
 import styles from "../ResumeBasic/resumeBasic.module.scss";
 
 type props = {

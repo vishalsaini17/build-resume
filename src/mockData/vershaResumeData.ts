@@ -8,7 +8,6 @@ export const resumeInfo2: resumeData = {
   website: {
     url: `vishweb.com/versha`,
     name:`/versha`,
-
   },
   address: "Gurugram - 122001",
   userBio: {
@@ -107,7 +106,6 @@ export const resumeInfo2: resumeData = {
           <p><strong>Front-end</strong>: React.js, Web API, HTML, CSS, Java Script, MUI, SCSS.</p>
           <p>Designed and developed front-end , using jQuery, jQueyUI, Html ad javaScript.</p>
           <p>Translated design team's UX wireframes and mockups into responsive, interactive features, using HTML/CSS, bootstrap and JavaScript</p>
-
         `
       }
     },

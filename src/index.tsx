@@ -2,21 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import AppContextProvider from './AppContext';
+import Redux from './Redux';
 import reportWebVitals from './reportWebVitals';
 
 import './index.scss';
+import Theme from './Theme';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
 root.render(
   <React.StrictMode>
-    <AppContextProvider>
+    <Redux>
       <BrowserRouter>
-        <App />
+        <Theme>
+          <App />
+        </Theme>
       </BrowserRouter>
-    </AppContextProvider>
+    </Redux>
   </React.StrictMode>
 );
 

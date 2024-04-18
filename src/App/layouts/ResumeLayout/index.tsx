@@ -1,11 +1,9 @@
 import { ArrowBackIos } from "@mui/icons-material";
 import PrintRoundedIcon from "@mui/icons-material/PrintRounded";
-import { Button, Fab } from "@mui/material";
+import { Button, Fab, Link } from "@mui/material";
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { useAppContext } from "../../../AppContext";
-import Link from "../../component/atoms/Link";
-import PrintBlock from "../../component/atoms/PrintBlock";
+import PrintBlock from "../../component/PrintBlock";
 import styles from "./resumeLayout.module.scss";
 
 type props = {
@@ -14,14 +12,9 @@ type props = {
 export type resumeTemplateProps = "simple" | "ats";
 
 const ResumeLayout: React.FC<props> = () => {
-  const { appDispatch, appState } = useAppContext();
-  console.log(appState, "appstate button");
 
   const handleClick = () => {
     console.log("logged");
-    appDispatch({ type: "changeTemplate", payload: "ats" });
-
-
   };
 
   return (
@@ -41,19 +34,6 @@ const ResumeLayout: React.FC<props> = () => {
           >
             Change Template
           </Button>
-          {/* <Menu
-        id="fade-menu"
-        MenuListProps={{
-          'aria-labelledby': 'fade-button',
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        TransitionComponent={Fade}
-      >
-        <MenuItem onClick={handleClose}>Template 1</MenuItem>
-        <MenuItem onClick={handleClose}>Template 2</MenuItem>
-      </Menu> */}
         </div>
       </div>
       <PrintBlock>
