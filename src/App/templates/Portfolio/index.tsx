@@ -1,4 +1,4 @@
-import HeroBanner from "../../organisms/HeroBanner"
+import HeroBanner from "../../sections/HeroBanner"
 
 type props = {}
 
