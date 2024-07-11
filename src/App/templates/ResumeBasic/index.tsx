@@ -46,8 +46,8 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
       <SectionResumeBasic title="Experience">
         {resumeDetails.experience.map((company) => {
           return (
-            <div>
-              <Typography variant="subtitle2" component={"h2"} sx={{ fontSize: "16px", fontWeight: "700", padding: "10px 0" }}>
+            <Box sx={{mt: 2}}>
+              <Typography variant="subtitle2" component={"h2"} sx={{ fontSize: "18px", fontWeight: "700", padding: "10px 0" }}>
                 {company.name} | {company.jobTitle} | <span style={{ fontWeight: "400", fontSize: "0.9em", fontStyle: "italic" }}> {company.startAt}-{company.endAt}  </span>
               </Typography>
               <Editor value={company.summary} contentOnly />
@@ -88,7 +88,7 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
                   </TableContainer>
                 </div>
               )}
-            </div>
+            </Box>
           );
         })}
       </SectionResumeBasic>

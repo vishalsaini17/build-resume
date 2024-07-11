@@ -16,6 +16,11 @@ const lightTheme = createTheme({
         LinkComponent: LinkBehavior,
       },
     },
+    MuiPaper: {
+      defaultProps: {
+        elevation: 8,
+      },
+    },
   },
 });
 
