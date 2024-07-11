@@ -16,6 +16,11 @@ const darkTheme = createTheme({
         LinkComponent: LinkBehavior,
       },
     },
+    MuiPaper: {
+      defaultProps: {
+        elevation: 8,
+      },
+    },
   },
 });
 

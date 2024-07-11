@@ -80,7 +80,7 @@ export const resumeInfo: resumeData = {
       name: "Kellton",
       jobTitle: "Senior Software developer",
       startAt: "Aug​ 2022",
-      endAt: "present",
+      endAt: "May 2024",
       location: "Gurugram",
       summary: `<p>Kellton is a leading global software development and digital transformation company that specializes in providing end-to-end IT solutions to clients across various industries. With a focus on innovation, quality, and customer satisfaction, Kellton has established itself as a trusted partner for businesses looking to leverage technology to drive growth and success. </p>`,
       achievements: {

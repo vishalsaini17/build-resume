@@ -13,6 +13,7 @@ type props = {
 const Theme: React.FC<props> = ({ children }) => {
   const { themeMode } = useSelector(appDataSelector);
 
+
   return (
     <ThemeProvider theme={themeMode === "dark" ? darkTheme : lightTheme}>
       <CssBaseline>
