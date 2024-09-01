@@ -19,7 +19,6 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
         <Typography variant="subtitle2" component={"h3"}>
           {resumeDetails.address} | <a style={{ textDecoration: "none", color: "rgb(13, 110, 253)" }} href={`tel:${resumeDetails.mobileNo}`}> {resumeDetails.mobileNo} </a> | <a style={{ textDecoration: "none", color: "rgb(13, 110, 253)" }} href={`mailto:${resumeDetails.email}`}> {resumeDetails.email} </a>
           | <a target="_blank" style={{ textDecoration: "none", color: "rgb(13, 110, 253)" }} href={resumeDetails.website.name} rel="noreferrer"> {resumeDetails.website.url} </a>
-
         </Typography>
 
       </header>
@@ -44,9 +43,9 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
         </Grid>
       </SectionResumeBasic>
       <SectionResumeBasic title="Experience">
-        {resumeDetails.experience.map((company) => {
+        {resumeDetails.experience.map((company, i) => {
           return (
-            <Box sx={{mt: 2}}>
+            <Box sx={{ mt: 2 }} key={i}>
               <Typography variant="subtitle2" component={"h2"} sx={{ fontSize: "18px", fontWeight: "700", padding: "10px 0" }}>
                 {company.name} | {company.jobTitle} | <span style={{ fontWeight: "400", fontSize: "0.9em", fontStyle: "italic" }}> {company.startAt}-{company.endAt}  </span>
               </Typography>
@@ -67,18 +66,18 @@ const ResumeBasic: React.FC<props> = ({ resumeDetails }) => {
                     {company.achievements.achievementsTitle}
                   </Typography>
                   <TableContainer component={Paper} sx={{ padding: "0", boxShadow: "none" }}>
-                    <Table sx={{ minWidth: 700 }} aria-label="customized table">
+                    <Table sx={{ minWidth: 700 }} aria-label="customized table" >
                       <TableBody>
                         {company.achievements?.list.map((achievement) => (
                           <TableRow key={achievement.title} sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
                             <TableCell
                               component="th"
                               scope="achievement"
-                              sx={{ fontWeight: "500", verticalAlign: "top", paddingBottom: "0", borderBottom: "0" }}
+                              sx={{ fontWeight: "500", verticalAlign: "top", paddingBottom: "0", borderBottom: "0", px: 1 }}
                             >
                               {achievement.title}
                             </TableCell>
-                            <TableCell align="right">
+                            <TableCell align="right" sx={{ px: 0 }}>
                               <Editor value={achievement.description} contentOnly />
                             </TableCell>
                           </TableRow>

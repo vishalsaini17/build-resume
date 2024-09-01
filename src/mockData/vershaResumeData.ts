@@ -7,36 +7,36 @@ export const resumeInfo2: resumeData = {
   email: `vershathakur27@gmail.com`,
   website: {
     url: `vishweb.com/versha`,
-    name:`/versha`,
+    name: `/versha`,
   },
   address: "Gurugram - 122001",
   userBio: {
     title: "Summary",
     description: `
-      <p>As an experienced Front-end Developer with 3+ years of expertise, I specialize in React and am proficient in HTML, CSS, SCSS, Bootstrap, Material UI, and TypeScript. I am skilled in jQuery, Git, and project management tools like Jira. My goal is to craft visually appealing, responsive, and high-performance web applications that drive innovation in Front-end development.</p>
-      <p>I am seeking a challenging role that will allow me to leverage my skills in frontend development, to build innovative solutions that solve real-world problems.</p>
+      <p>I am a Front-end Developer with <strong>4+ years</strong> of experience specializing in <b>React</b> and building responsive, high-performance web applications. My expertise includes Redux, SCSS, MUI, HTML, CSS, and Bootstrap, along with strong skills in Git and Jira for project management. I focus on crafting visually appealing and innovative solutions in React development.</p>
+      <p><i>I am seeking a challenging role that will allow me to leverage my skills in frontend development, to build innovative solutions that solve real-world problems.</i></p>
     `
   },
   skilSet: [
     {
       name: "HTML & CSS",
-      ratingOutOf10: 7,
+      ratingOutOf10: 9,
     },
     {
       name: "Bootstrap, Material UI",
-      ratingOutOf10: 7,
+      ratingOutOf10: 7.5,
     },
     {
       name: "JavaScript",
-      ratingOutOf10: 5,
+      ratingOutOf10: 6,
     },
     {
       name: "JQuery and JQuery plugin",
-      ratingOutOf10: 5,
+      ratingOutOf10: 9,
     },
     {
       name: "React",
-      ratingOutOf10: 5,
+      ratingOutOf10: 8,
     },
     {
       name: "TypeScript",
@@ -44,7 +44,7 @@ export const resumeInfo2: resumeData = {
     },
     {
       name: "Git [Github, Bitbucket]",
-      ratingOutOf10: 6,
+      ratingOutOf10: 7.5,
     },
     {
       name: "Jira & Trello",
@@ -61,10 +61,21 @@ export const resumeInfo2: resumeData = {
   ],
   experience: [
     {
+      name: "Accenture",
+      jobTitle: "Web developer",
+      startAt: "May 2024",
+      endAt: "present",
+      location: "Gurugram",
+      summary: `
+        <p>I work on the healthcare-related React project <b>Keytruda</b>, where I update the website's UI, create new components, and handle data integration using <b>Gatsby.js</b>. I also ensure smooth performance by fixing bugs and enhancing user experience.</p>
+        <p>Alongside development, I create and modify email campaigns using <b>Veeva</b> and HQ email platforms, customizing templates with <b>Eazyplus</b>. I manage the <b>Veeva PromoMats system</b> to ensure regulatory compliance for promotional content and design animated banners using <b>Google Web Designer</b> to boost visual appeal.</p>
+      `,
+    },
+    {
       name: "Kellton",
       jobTitle: "Software developer",
       startAt: "Aug​ 2022",
-      endAt: "present",
+      endAt: "May 2024",
       location: "Gurugram",
       summary: `<p>Kellton is a leading global software development and digital transformation company that specializes in providing end-to-end IT solutions to clients across various industries. With a focus on innovation, quality, and customer satisfaction, Kellton has established itself as a trusted partner for businesses looking to leverage technology to drive growth and success. </p>`,
       achievements: {
@@ -73,12 +84,7 @@ export const resumeInfo2: resumeData = {
           {
             title: "Divorce Angel",
             description: `
-              <p>This project has the procedure that divorce makes easy some simple steps , they have best lawyers for their customer to get best
-              results.</p>
-              <p> Identified web-based user interactions and developed highly-responsive user interface components via React concepts <p> 
-              <p> Translated designs & wire frames into quality code and wrote application interface code via JavaScript following React js workflows  </p>
-              <p>Involved in requirements gathering, analysis, design, implementation, and testing.</p>
-              <p> Interact with client to understand the business requirement and discuss the respective queries.</p>
+              <p>For the Divorce Angel project, I developed the front-end using React.js, Redux, HTML, CSS, MUI, and Formik. I focused on creating a user-friendly interface and also implemented push notifications with Firebase to enhance user engagement and ensure a seamless experience throughout the divorce process.</p>
             `
           },
           {
@@ -123,87 +129,38 @@ export const resumeInfo2: resumeData = {
           {
             title: "Healthy bites",
             description: `
-             <p> E-commerce platform dealing in Frozen foods in Mohali, Chandigarh.</p>
-              <p> Design whole website from scratch , modules and new features. </p>
-              <p> Create website user friendly and responsive and also created HTML email templates. </p>
-              <p> Identified web-based user interactions and developed highly-responsive user interface components. <p> 
-              <p> Translated designs & wire frames into quality code and wrote application interface code. </p>
-              <p>Involved in requirements gathering, analysis, design, implementation, and testing.</p>
-              <p> Interact with client to understand the business requirement and discuss the respective queries.</p>
+             <p>For the Healthy Bites project, I designed and developed the e-commerce website from scratch, focusing on user-friendly and responsive features. I created UI components, HTML email templates, and translated designs into quality code. My role included handling requirements, implementation, and client interactions.</p>
             `
           },
           {
             title: "Gourmet food bowl",
             description: `
-              <p> E-commerce platform dealing in Frozen foods in Mohali, Chandigarh.</p>
-              <p> Design whole website from scratch , modules and new features. </p>
-              <p> Create website user friendly and responsive and also created HTML email templates. </p>
-              <p> Identified web-based user interactions and developed highly-responsive user interface components. <p> 
-              <p> Translated designs & wire frames into quality code and wrote application interface code. </p>
-              <p>Involved in requirements gathering, analysis, design, implementation, and testing.</p>
-              <p> Interact with client to understand the business requirement and discuss the respective queries.</p>
+              <p>For the Gourmet Food Bowl project, I designed and developed a responsive, user-friendly e-commerce platform, integrating features and enhancing the UI to ensure a seamless shopping experience.</p>
             `
           },
           {
-            title: "Kaleidoscope",
+            title: "Kaleidoscope / Kaleidoscope Psychologists",
             description: `
-              <p> Kaleidoscope offers top-notch mental health and wellness services , their psychologists
-              provide consulting and give sessions for mental wellness. </p>
-              <p> Design whole website from scratch , modules and new features. </p>
-              <p> Create website user friendly and responsive and also created HTML email templates. </p>
-              <p> Identified web-based user interactions and developed highly-responsive user interface components. <p> 
-              <p> Translated designs & wire frames into quality code and wrote application interface code. </p>
-              <p>Involved in requirements gathering, analysis, design, implementation, and testing.</p>
-              <p> Interact with client to understand the business requirement and discuss the respective queries.</p>
+              <p><strong>Kaleidoscope</strong> and <strong>Kaleidoscope Psychologists</strong> provide top-notch mental health and wellness services. For both projects, I designed and developed their websites from scratch, focusing on user-friendliness and responsiveness. I created highly-responsive UI components, HTML email templates, and translated designs into quality code. My role included handling requirements, analysis, design, implementation, and testing, and collaborating with the client to address their business needs.</p>
             `
           },
           {
             title: "Lion Services",
             description: `
-              <p> Maintain the website and update coverages/content according to the need , also adding new
-              pages through CMS,made with HTML, CSS & Javascript.  </p>
-              <p> Design whole web landing page from scratch for a new project in agra made with HTML, CSS & Javascript </p>
-              <p> Create website user friendly and responsive and also created HTML email templates. </p>
-              <p> Translated designs & wire frames into quality code and wrote web page interface code. </p>
+              <p>For the Lion Services project, I maintained and updated the website using HTML, CSS, and JavaScript, and designed a user-friendly, responsive landing page for a new Agra project. I also created HTML email templates and translated designs into quality code.</p>
             `
           },
           {
-            title: "Kaleidoscope Psychologists",
+            title: "Holistic / Cosmichealers",
             description: `
-              <p> </p>
-              <p> Design whole web landing page from scratch for a new project in agra made with HTML, CSS & Javascript </p>
-              <p> Create website user friendly and responsive and also created HTML email templates. </p>
-              <p> Translated designs & wire frames into quality code and wrote web page interface code. </p>
+              <p>I designed and developed the Cosmichealers e-commerce platform from scratch, creating a responsive, user-friendly website. I built new features, developed UI components, translated designs into clean code, and created HTML email templates. I also collaborated with the client throughout all project phases.</p>
             `
           },
-          {
-            title: "Holistic",
-            description: `
-              <p> Design whole website from scratch , modules and new features. </p>
-              <p> Create website user friendly and responsive and also created HTML email templates. </p>
-              <p> Identified web-based user interactions and developed highly-responsive user interface components. <p> 
-              <p> Translated designs & wire frames into quality code and wrote application interface code. </p>
-              <p>Involved in requirements gathering, analysis, design, implementation, and testing.</p>
-              <p> Interact with client to understand the business requirement and discuss the respective queries.</p>
-            `
-          },
-          {
-            title: "Cosmichealers",
-            description: `
-              <p> E-commerce platform dealing in Frozen foods in Mohali, Chandigarh.</p>
-              <p> Design whole website from scratch , modules and new features. </p>
-              <p> Create website user friendly and responsive and also created HTML email templates. </p>
-              <p> Identified web-based user interactions and developed highly-responsive user interface components. <p> 
-              <p> Translated designs & wire frames into quality code and wrote application interface code. </p>
-              <p>Involved in requirements gathering, analysis, design, implementation, and testing.</p>
-              <p> Interact with client to understand the business requirement and discuss the respective queries.</p>
-            `
-          },
-         
+
         ]
       }
     },
-   
+
   ],
   educations: [
     {
@@ -228,7 +185,8 @@ export const resumeInfo2: resumeData = {
       instituteName: "Govt Girls Sr. Sec. School",
       courseName: "Class 12th",
       fieldOfStudy: "Commerce",
-      startAt: "2012",
+      startAt: "2011",
+      endAt: "2012",
       grade: "65%",
       university: "Haryana Board School of Education (HBSE)",
     },
@@ -236,7 +194,8 @@ export const resumeInfo2: resumeData = {
       instituteName: "Govt Girls Sr. Sec. School",
       courseName: "Class 10th",
       fieldOfStudy: "common school study",
-      startAt: "2010",
+      startAt: "2009",
+      endAt: "2011",
       grade: "67%",
       university: "Haryana Board School of Education (HBSE)",
     }

@@ -6,15 +6,14 @@ export const resumeInfo: resumeData = {
   mobileNo: "+91-8467849784",
   email: `vsaini17@hotmail.com`,
   website: {
-    url:`vishweb.com/vishal`,
-    name:`/vishal`,
+    url: `vishweb.com/vishal`,
+    name: `/vishal`,
   },
   address: "Gurugram - 122001",
   userBio: {
     title: "Summary",
     description: `
-      <p>As an experienced Front-end Developer with 6+ years of expertise, I specialize in React and am proficient in HTML, CSS, SCSS, Bootstrap, Material UI, and TypeScript. I am skilled in jQuery, Git, and project management tools like Jira. My goal is to craft visually appealing, responsive, and high-performance web applications that drive innovation in Front-end development.</p>
-      <p>I am seeking a challenging role that will allow me to leverage my skills in full-stack development, cloud computing, and agile methodologies to build innovative solutions that solve real-world problems.</p>
+      <p>As a Senior Software Engineer with over <strong>7 years</strong> of experience, I specialize in front-end development, particularly with <strong>React, Redux and Typescript</strong>. My expertise includes <strong>HTML, CSS, SCSS, Bootstrap, Material UI and js-library</strong>. I am adept in Git, and project management tools like Jira. I am passionate about creating visually appealing, responsive, and high-performance web applications and seek a challenging role to leverage my skills in <em>full-stack development, cloud computing, and agile methodologies</em> to deliver innovative solutions.</p>
     `
   },
   skilSet: [
@@ -37,6 +36,10 @@ export const resumeInfo: resumeData = {
     {
       name: "React",
       ratingOutOf10: 8,
+    },
+    {
+      name: "Redux",
+      ratingOutOf10: 8
     },
     {
       name: "TypeScript",
@@ -69,6 +72,9 @@ export const resumeInfo: resumeData = {
     {
       name: "PHP",
       ratingOutOf10: 5,
+    }, {
+      name: "GraphQL",
+      ratingOutOf10: 6,
     },
     {
       name: "MySQL",
@@ -82,26 +88,20 @@ export const resumeInfo: resumeData = {
       startAt: "Aug​ 2022",
       endAt: "May 2024",
       location: "Gurugram",
-      summary: `<p>Kellton is a leading global software development and digital transformation company that specializes in providing end-to-end IT solutions to clients across various industries. With a focus on innovation, quality, and customer satisfaction, Kellton has established itself as a trusted partner for businesses looking to leverage technology to drive growth and success. </p>`,
+      summary: `<p>Kellton provides end-to-end IT solutions focusing on innovation and customer satisfaction.</p>`,
       achievements: {
         achievementsTitle: "Projects",
         list: [
           {
             title: "Evise.ai",
             description: `
-              <p>Evise provide the unique new experience to manage your digital transformation projects towards success. Meet the revolutionary human-led, Generative AI powered business platform to deliver measurable success.</p>
-              <p>I create the 'Program Setup' in client portal, which is multistep form and 'Program view' which show setup details and contain lot of action like: handle document, add and remove details.</p>
-              <p><strong>Front-end: </strong>  React.js, TypeScript, Redux, MUI, SCSS.</p>
-              <p><strong>Back-end</strong>: OpenAi api, node.js, mongodb.</p>
+              <p>Developed complex multi-step forms and detailed data handling features in the client & admin portal using React.js, TypeScript, Redux, and MUI. Implemented document management and action functionalities for user interaction.</p>
             `
           },
           {
             title: "Americana Restaurants",
             description: `
-              <p>Americana Restaurants is the largest restaurant operator in the MENA region and Kazakhstan in terms of number of restaurants in its countries of operations. Americana Restaurants operates iconic global brands such as KFC, Pizza Hut, Hardee's, Krispy Kreme, TGI Fridays, and recently added Peet's Coffee, along with proprietary brands such as Wimpy and Chicken Tikka across the MENA region and Kazakhstan for over fifty years.</p>
-              <p>Integrate Loyalty program in KFC application. Which is provide the point to user on each purchase. User can see, redeem and track the points</p>
-              <p><strong>Front-end: </strong> React.js, TypeScript, Redux, MUI, SCSS.</p>
-              <p>Also make a custom JS library.</p>
+              <p>Integrated a loyalty program into the KFC application, enabling users to earn, track, and redeem points on their purchases. Also created a custom JavaScript library to enhance application functionality.</p>
             `
           }
         ]
@@ -113,12 +113,14 @@ export const resumeInfo: resumeData = {
       startAt: "Dec 2021",
       endAt: "Aug 2022",
       location: "Gurugram",
-      summary: `<p>Pristyn Care is a Gurugram based health-tech company that deals in minimal invasive medical and surgical interventions.<p>`,
+      summary: `<p>A Gurugram-based health-tech company specializing in minimally invasive medical interventions.<p>`,
       workInfo: {
         title: "Role and Responsibilities",
         description: `
-          <p>Designed and implemented an admin dashboard that automatically generates marketing pages using data from Excel sheets and CSV files. Additionally, created HTML page templates.</p>
-          <p><strong>Front-end</strong>: React.js, TypeScript, Context API, MUI, SCSS.</p>
+          <ul>
+            <li>Designed and developed an advanced admin dashboard that automates the generation of marketing pages from Excel and CSV data. Utilized React.js, TypeScript, Context API, and MUI for a seamless and efficient user experience.</li>
+            <li>Contributing in development of hospital chat app.</li>
+          </ul>
         `
       }
     },
@@ -128,45 +130,26 @@ export const resumeInfo: resumeData = {
       startAt: "Feb 2020",
       endAt: "Dec 2021",
       location: "Gurugram",
-      summary: `<p>Sprinklr is an American software company based in New York City that develops a SaaS customer experience management platform.<p>`,
+      summary: `<p>An American software company providing a SaaS customer experience management platform.<p>`,
       workInfo: {
         title: "Role and Responsibilities",
         description: `
-          <p>During my tenure at Sprinklr, I worked as a Frontend Developer and created Web pages and blocks template using React with TypeScript and ThemeUI. Data was provided by the Contentful CMS, so I connected the data using a Gatsby & GraphQL setup.</p>
-          <p><strong>Front-end</strong>: React.js, TypeScript, GraphQL, Context API, ThemeUI, SCSS.</p>
-        `
-      }
-    },
-    {
-      name: "Z1-Media (Z1 Tech)",
-      jobTitle: "Frontend Developer",
-      startAt: "Jun 2019",
-      endAt: "Feb 2020",
-      location: "Gurugram",
-      summary: `<p>Z1 Tech is a new age digital media company that strives to innovate digital marketing, advertising and distribution channels. <p>`,
-      workInfo: {
-        title: "Role and Responsibilities",
-        description: `
-          <p>During my tenure at Z1-Media, most of the time I worked in Admin portal which used to be a
-          multipurpose portal, Like the same Superadmin control, Admin used to manage client and Client
-          also check their status, earning and config according to need. Also worked on their custom
-          Advertisement Library build on core Javascript. </p>
-          <p><strong>Front-end</strong>: React.js, TypeScript, GraphQL, Context API, ThemeUI, SCSS.</p>
+          <p>I'm handling there main Website, Created web pages and templates using React, TypeScript, ThemeUI, and connected data through Gatsby & GraphQL.</p>
         `
       }
     },
     {
       name: "Bhadani technologies",
-      jobTitle: "Web Developer",
+      jobTitle: "UI Developer",
       startAt: "Oct 2017",
-      endAt: "Jun 2019",
+      endAt: "Oct 2019",
       location: "Gurugram",
-      summary: `<p>Bhadani Technologies is one of the most trusted IT solution provider companies to develop Software, Web, Mobile Apps development, and Testing services.  <p>`,
+      summary: `<p>A trusted IT solutions provider for software, web, and mobile app development.<p>`,
       workInfo: {
         title: "Role and Responsibilities",
         description: `
-          <p>During my tenure at Bhadani technologies, most of the time I worked in  email templates, Psd to Html , also custom designs according to the client's need and requirements. </p>
-          <p><strong>Front-end</strong>: , Html, Css , Js.</p>
+          <p>Focused onconverting PSDs, Figma, sketch to HTML, custom designing and email templates according to client requirements.</p>
+          <p><strong>Front-end</strong>: HTML, CSS, javascript, JQuery, Bootstrap, responsive web page.</p>
         `
       }
     },
@@ -179,7 +162,7 @@ export const resumeInfo: resumeData = {
       startAt: "2013",
       endAt: "2017",
       grade: "60%",
-      location:"Gurugram",
+      location: "Gurugram",
     },
     {
       instituteName: "Happy Modal Sr. Sec. School",
@@ -188,16 +171,16 @@ export const resumeInfo: resumeData = {
       startAt: "Apr, 2012",
       endAt: "Mar, 2013",
       grade: "60%",
-      location:"Gurugram",
+      location: "Gurugram",
     },
     {
-      instituteName: "Happy Modal Sr. Sec. School",
-      courseName: "Class 10th",
-      fieldOfStudy: "common school study",
-      startAt: "Apr, 2008",
-      endAt: "Apr, 2009",
-      grade: "60%",
-      location:"Gurugram",
+      instituteName: "DICS Computer Eduation",
+      courseName: "Computer & Networking",
+      fieldOfStudy: "Computer & Networking",
+      startAt: "Apr, 2009",
+      endAt: "Apr, 2010",
+      grade: "69",
+      location: "Gurugram",
     }
   ],
   awards: [],
